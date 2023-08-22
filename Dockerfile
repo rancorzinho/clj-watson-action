@@ -7,7 +7,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y curl default-jre 
 #RUN chmod 600 /root/.ssh/known_hosts
 
 COPY /home/runner/.ssh /root/.ssh
-COPY /home/runner/.gitconfig /root/.gitconfig
+#COPY /home/runner/.gitconfig /root/.gitconfig
 
 RUN sed 's|/home/runner|/root|g' -i /root/.ssh/config
 
