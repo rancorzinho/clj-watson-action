@@ -11,7 +11,7 @@ suggestion_fix="${8}"
 database_strategy="${9}"
 output_file="${10}"
 path="${11}"
-output_cmd="clojure -Sdeps \"{:deps {io.github.clj-holmes/clj-watson {:git/tag \\\"${clj_watson_tag}\\\" :git/sha \\\"${clj_watson_sha}\\\"}}}\" -M -m clj-watson.cli scan -p ${deps_edn_path}"
+output_cmd="clojure -Sdeps \"{:deps {io.github.rancorzinho/clj-watson {:git/tag \\\"${clj_watson_tag}\\\" :git/sha \\\"${clj_watson_sha}\\\"}}}\" -M -m clj-watson.cli scan -p ${deps_edn_path}"
 
 if [[ -d ${path} ]]; then
   cd ${path}
